@@ -1,0 +1,1311 @@
+<!doctype html>
+<!--
+  ★ここに自分のFormspreeエンドポイントを入れる: 問い合わせフォームの Formspree エンドポイントを設定してください。
+  現在のフォーム action は https://formspree.io/f/XXXXXXXX です。
+  ご自身の Formspree フォームIDに置き換えて公開してください。
+-->
+<html lang="ja" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DR.CHILL VAPE 店舗卸のご案内｜for Business</title>
+  <meta name="description" content="Amazon売れ筋ランキング1位の DR.CHILL 7000 を店舗へ卸します。店頭価格3,000円・16フレーバーの高単価・高収益の商材。店頭販売はもちろん景品やノベルティなど売り方は自由です。卓上什器・POP・販促物もご用意します。">
+  <meta property="og:title" content="DR.CHILL VAPE 店舗卸のご案内｜for Business">
+  <meta property="og:description" content="売れ筋No.1の VAPE を、あなたの店舗の新たな収益源に。高単価・高粗利で、店頭販売も景品も売り方は自由。卓上什器・POP・販促物もご用意する店舗卸です。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://d2w53g1q050m78.cloudfront.net/drchillshop/uploads/assets/kv/kv2_pc.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Noto+Sans+JP:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <script>
+    document.documentElement.classList.add('js');
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            abyss: '#05080e',
+            charcoal: '#11151c',
+            slateblue: '#2b333d',
+            ash: '#434d55',
+            ink: '#11151c',
+            paper: '#FFFFFF',
+            mist: '#F4F5F5',
+            line: '#E9EAEA',
+            slate: '#666666',
+            red: '#D7263D',
+            redhi: '#E84B5E'
+          },
+          fontFamily: {
+            sans: ['"Noto Sans JP"', 'sans-serif'],
+            display: ['"Montserrat"', '"Noto Sans JP"', 'sans-serif']
+          },
+          boxShadow: {
+            soft: '.7px 1.1px 6.6px -2px rgba(0,0,0,.024), 1.3px 2px 11px rgba(0,0,0,.035)',
+            glass: '0 8px 32px rgba(0,0,0,.15)',
+            photo: '0 32px 90px rgba(0,0,0,.42), 0 0 0 1px rgba(255,255,255,.18)'
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --abyss: #060a13;
+      --charcoal: #0f1622;
+      --slateblue: #2b333d;
+      --ash: #434d55;
+      --paper: #ffffff;
+      --mist: #f4f5f5;
+      --line: #e9eaea;
+      --slate: #666666;
+      --red: #d7263d;
+      --redhi: #e84b5e;
+      --ink: #11151c;
+    }
+
+    html {
+      scroll-padding-top: 88px;
+    }
+
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      background: var(--abyss);
+      color: var(--ink);
+      letter-spacing: 0;
+    }
+
+    ::selection {
+      background: rgba(215, 38, 61, .9);
+      color: var(--paper);
+    }
+
+    /* Dark sections follow the official DR.CHILL tone: a deep blue-charcoal base
+       (never flat #000) with a cool blue-grey spotlight glow. The glow position is
+       driven by --gx/--gy so each section can light from a different spot (top-right,
+       top-centre, top-left) for rhythm, and a faint second glow keeps the lower area
+       from going dead-flat. */
+    .dark-surface {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      --gx: 82%;
+      --gy: -2%;
+      --gc: rgba(134,146,176,.30);
+      background:
+        radial-gradient(96% 72% at var(--gx) var(--gy), var(--gc) 0%, rgba(58,72,102,.18) 30%, rgba(10,15,26,0) 62%),
+        radial-gradient(118% 80% at 6% 112%, rgba(46,60,92,.20) 0%, rgba(10,15,26,0) 56%),
+        linear-gradient(168deg, #101a2c 0%, #0a1019 58%, var(--abyss) 100%);
+    }
+
+    .dark-surface::before {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      content: "";
+      pointer-events: none;
+      background:
+        radial-gradient(86% 74% at 50% 38%, transparent 0%, rgba(6,10,19,.14) 52%, rgba(5,8,15,.62) 100%),
+        linear-gradient(90deg, rgba(6,10,19,.5), transparent 46%, rgba(6,10,19,.4));
+    }
+
+    .dark-surface > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* spotlight position / hue variants for per-section variety */
+    .ds-tc { --gx: 50%; --gy: -6%; }
+    .ds-tl { --gx: 16%; --gy: -2%; }
+    .ds-tr { --gx: 86%; --gy: -2%; }
+    .ds-cool { --gc: rgba(116,134,184,.32); }
+
+    /* Light sections aren't flat white: a faint cool wash adds depth and lifts the
+       white cards/table on top, echoing the cool tone of the dark sections. */
+    .light-surface {
+      background:
+        radial-gradient(110% 68% at 50% -8%, rgba(116,134,184,.08) 0%, rgba(255,255,255,0) 52%),
+        linear-gradient(180deg, #ffffff 0%, #f2f4f8 100%);
+    }
+
+    .dark-grid {
+      background-image:
+        linear-gradient(rgba(210,222,244,.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(210,222,244,.05) 1px, transparent 1px),
+        radial-gradient(96% 74% at 80% -2%, rgba(134,146,176,.32) 0%, rgba(58,72,102,.18) 30%, rgba(10,15,26,0) 62%),
+        radial-gradient(118% 80% at 6% 112%, rgba(46,60,92,.20) 0%, rgba(10,15,26,0) 56%),
+        linear-gradient(168deg, #101a2c 0%, #0a1019 58%, var(--abyss) 100%);
+      background-size: 96px 96px, 96px 96px, auto, auto, auto;
+    }
+
+    .header-shell {
+      border-bottom: 1px solid rgba(233,234,234,.12);
+      background: rgba(5,8,14,.84);
+      backdrop-filter: blur(16px);
+    }
+
+    .brand-logo {
+      filter: brightness(0) invert(1);
+    }
+
+    .eyebrow {
+      font-family: "Montserrat", "Noto Sans JP", sans-serif;
+      font-size: .76rem;
+      font-weight: 500;
+      letter-spacing: .18em;
+      line-height: 1.6;
+      text-transform: lowercase;
+    }
+
+    .section-title {
+      font-family: "Montserrat", "Noto Sans JP", sans-serif;
+      font-weight: 400;
+      letter-spacing: .02em;
+    }
+
+    .red-line {
+      width: min(250px, 60vw);
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--red), transparent);
+    }
+
+    .red-text {
+      color: var(--red);
+    }
+
+    .metal-red {
+      color: var(--red);
+      /* Dark halo guarantees the large red numerals stay legible on any point of the
+         gradient (measured 3.7-4.1:1 in practice; this keeps that margin if content shifts). */
+      text-shadow:
+        0 1px 2px rgba(5,8,14,.55),
+        0 12px 32px rgba(215,38,61,.30);
+    }
+
+    /* WCAG AA: brand red (#D7263D) on the dark surface = 3.78:1, failing 4.5:1 for small
+       text. Lift red text on dark to a brighter coral (#ff7a86 clears 4.5:1). Resolved by
+       descendant specificity so it stays correct through nesting: dark→coral, light card→
+       brand red, dark panel nested inside a light card→coral again. (Higher specificity than
+       Tailwind's own .text-red utility, which is injected later in source order.) */
+    .dark-surface .text-red { color: #ff7a86; }
+    .dark-surface .soft-card .text-red,
+    .dark-surface .bg-paper .text-red,
+    .dark-surface .bg-mist .text-red { color: var(--red); }
+    .dark-surface .soft-card .dark-surface .text-red,
+    .dark-surface .bg-paper .dark-surface .text-red,
+    .dark-surface .bg-mist .dark-surface .text-red { color: #ff7a86; }
+
+    .glass-button {
+      border: 1px solid rgba(255,255,255,.42);
+      border-radius: 0;
+      background: linear-gradient(253deg, rgba(255,255,255,.30) 0%, rgba(255,255,255,.06) 62%);
+      box-shadow: 0 8px 32px rgba(0,0,0,.15);
+      color: var(--paper);
+      backdrop-filter: blur(8px);
+      transition: border-color .18s ease, box-shadow .18s ease, color .18s ease, transform .18s ease;
+    }
+
+    .glass-button:hover {
+      border-color: rgba(215,38,61,.82);
+      box-shadow: 0 8px 32px rgba(0,0,0,.15), 0 0 28px rgba(215,38,61,.24);
+      color: var(--paper);
+      transform: translateY(-1px);
+    }
+
+    .red-button {
+      border: 1px solid var(--red);
+      border-radius: 0;
+      background: var(--red);
+      color: var(--paper);
+      transition: background-color .18s ease, border-color .18s ease;
+    }
+
+    .red-button:hover {
+      border-color: var(--redhi);
+      background: var(--redhi);
+    }
+
+    .soft-card {
+      border: 1px solid var(--line);
+      border-radius: 0;
+      background: var(--paper);
+      box-shadow: .7px 1.1px 6.6px -2px rgba(0,0,0,.024), 1.3px 2px 11px rgba(0,0,0,.035);
+    }
+
+    .dark-card {
+      border: 1px solid rgba(233,234,234,.18);
+      border-radius: 0;
+      background: linear-gradient(180deg, rgba(255,255,255,.085) 0%, rgba(255,255,255,.025) 100%);
+      box-shadow: 0 18px 50px rgba(0,0,0,.18);
+      backdrop-filter: blur(6px);
+    }
+
+    /* "答え" verdict block: no fill, no glow, no red — the payoff is carried by space
+       and type alone. A single neutral hairline above sets it apart from the worry
+       cards; the product name (paper-white, large) is the only visual peak. */
+    .answer-rule {
+      width: 64px;
+      height: 1px;
+      background: rgba(233,234,234,.45);
+    }
+
+    .answer-eyebrow {
+      font-family: "Montserrat", "Noto Sans JP", sans-serif;
+      font-size: .74rem;
+      font-weight: 500;
+      letter-spacing: .32em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.42);
+    }
+
+    /* product-name emphasis in the answer block: clean white underline (monochrome — no red/purple) */
+    .answer-underline {
+      text-decoration: underline;
+      text-decoration-color: rgba(255,255,255,.42);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 9px;
+    }
+
+    .hero-photo {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(233,234,234,.2);
+      border-radius: 0;
+      aspect-ratio: 4 / 5;
+      max-height: 620px;
+      margin-inline: auto;
+      background: linear-gradient(145deg, rgba(255,255,255,.12), rgba(255,255,255,.035));
+      box-shadow: 0 32px 90px rgba(0,0,0,.42), 0 0 0 1px rgba(255,255,255,.18);
+    }
+
+    .hero-photo::before,
+    .hero-photo::after {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      content: "";
+      pointer-events: none;
+    }
+
+    .hero-photo::before {
+      box-shadow: inset 0 0 0 10px rgba(255,255,255,.08), inset 0 22px 70px rgba(255,255,255,.10);
+    }
+
+    .hero-photo::after {
+      background: radial-gradient(70% 55% at 50% 32%, transparent 0%, rgba(5,8,14,.12) 48%, rgba(5,8,14,.44) 100%);
+    }
+
+    .hero-photo img {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .icon-box svg {
+      width: 42px;
+      height: 42px;
+      stroke: currentColor;
+      stroke-width: 1.55;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .role-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: .6rem;
+      line-height: 1.55;
+    }
+    .role-list svg {
+      width: 20px;
+      height: 20px;
+      flex: none;
+      margin-top: 2px;
+      stroke: currentColor;
+      stroke-width: 2.2;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      opacity: .82;
+    }
+
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: minmax(0, .86fr) minmax(0, 1.08fr) minmax(0, 1fr);
+    }
+
+    .comparison-grid > div {
+      min-width: 0;
+    }
+
+    .faq-item summary {
+      list-style: none;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary::after {
+      margin-left: auto;
+      content: "+";
+      color: var(--red);
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 1;
+      transition: transform .2s ease;
+    }
+
+    .faq-item[open] summary::after {
+      transform: rotate(45deg);
+    }
+
+    .fade-up {
+      opacity: 1;
+      transform: none;
+    }
+
+    .js .fade-up {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+
+    .js .fade-up.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .focus-ring:focus-visible {
+      outline: 2px solid var(--red);
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 1023px) {
+      .hero-photo {
+        aspect-ratio: 4 / 3;
+        max-height: 430px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .comparison-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .glass-button,
+      .red-button,
+      .dark-card,
+      .soft-card {
+        transition: none;
+      }
+
+      .js .fade-up {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+
+      html {
+        scroll-behavior: auto;
+      }
+    }
+
+    /* ============================================================================
+       MONOCHROME OVERRIDE — remove all red UI accents, go white / black / gray to
+       match the official DR.CHILL tone (red is only the product colour in photos,
+       not a UI accent). Uses !important to win over Tailwind's late-injected utilities.
+       ============================================================================ */
+    /* text accents → light on dark surfaces, ink on light surfaces (nesting-aware) */
+    .text-red { color: #0a0a0a !important; }
+    .dark-surface .text-red { color: #f4f5f5 !important; }
+    .dark-surface .bg-paper .text-red,
+    .dark-surface .bg-mist .text-red,
+    .dark-surface .soft-card .text-red { color: #0a0a0a !important; }
+    .dark-surface .soft-card .dark-surface .text-red,
+    .dark-surface .bg-paper .dark-surface .text-red,
+    .dark-surface .bg-mist .dark-surface .text-red { color: #f4f5f5 !important; }
+
+    /* showpiece numerals (収益 / 20 / %) → white on dark */
+    .metal-red { color: #f4f5f5 !important; text-shadow: 0 1px 2px rgba(5,8,14,.5) !important; }
+
+    /* hover states that turned red → neutral */
+    .hover\:text-red:hover { color: #0a0a0a !important; }
+    .dark-surface .hover\:text-red:hover { color: #ffffff !important; }
+
+    /* solid red fills → context-appropriate neutral */
+    .bg-red { background-color: #0a0a0a !important; }            /* fills on light (column header, 必須, dots) → black */
+    .dark-surface .bg-red { background-color: rgba(244,245,245,.85) !important; } /* small ticks/dots on dark → light */
+    .dark-surface .bg-paper .bg-red,
+    .dark-surface .bg-mist .bg-red,
+    .dark-surface .soft-card .bg-red { background-color: #0a0a0a !important; }   /* fills on a light card nested in a dark section (必須 badges) → black */
+    .dark-surface .border-red.bg-red {                           /* outlined step-number chips on dark */
+      background-color: rgba(244,245,245,.08) !important;
+      border-color: rgba(244,245,245,.55) !important;
+    }
+
+    /* red borders → neutral */
+    .border-red, .border-red\/50, .border-red\/35 { border-color: rgba(10,10,10,.22) !important; }
+    .dark-surface .border-red,
+    .dark-surface .border-red\/50,
+    .dark-surface .border-red\/35 { border-color: rgba(244,245,245,.26) !important; }
+
+    /* red tint backgrounds (highlight column / callouts) → faint neutral */
+    .bg-red\/5, .bg-red\/10 { background-color: rgba(10,10,10,.04) !important; }
+    .dark-surface .bg-red\/5, .dark-surface .bg-red\/10 { background-color: rgba(244,245,245,.06) !important; }
+
+    /* underlines */
+    .decoration-red { text-decoration-color: rgba(10,10,10,.5) !important; }
+    .dark-surface .decoration-red { text-decoration-color: rgba(244,245,245,.6) !important; }
+
+    /* divider bars / gradient lines */
+    .red-line { background: linear-gradient(90deg, transparent, rgba(10,10,10,.3), transparent) !important; }
+    .dark-surface .red-line { background: linear-gradient(90deg, transparent, rgba(244,245,245,.5), transparent) !important; }
+    .bg-gradient-to-b.from-red { background-image: linear-gradient(to bottom, rgba(244,245,245,.6), rgba(244,245,245,0)) !important; }
+
+    /* submit button → solid black square (official style) */
+    .red-button { background: #0a0a0a !important; border-color: #0a0a0a !important; color: #fff !important; }
+    .red-button:hover { background: #222 !important; border-color: #222 !important; }
+
+    /* glass CTA hover glow → neutral white instead of red */
+    .glass-button:hover {
+      border-color: rgba(244,245,245,.7) !important;
+      box-shadow: 0 8px 32px rgba(0,0,0,.15), 0 0 24px rgba(244,245,245,.12) !important;
+    }
+
+    /* FAQ "+" icon + focus ring → neutral */
+    .faq-item summary::after { color: #0a0a0a !important; }
+    .focus-ring:focus-visible { outline-color: #8a8f98 !important; }
+
+    /* ============================================================================
+       REFINED LIGHT SURFACES — pure flat #fff reads harsh next to the rich dark.
+       Use a soft cool off-white with a faint top-down gradient, refined hairline
+       borders and a more elegant card shadow for a premium editorial feel.
+       ============================================================================ */
+    section.bg-paper {
+      background-color: #fafbfc !important;
+      background-image: linear-gradient(180deg, #ffffff 0%, #f4f6f8 100%) !important;
+    }
+    .bg-paper { background-color: #fafbfc !important; }
+    .bg-mist { background-color: #f1f3f5 !important; }
+    .soft-card {
+      background: linear-gradient(180deg, #ffffff 0%, #f7f8fa 100%) !important;
+      border-color: rgba(16,22,30,.09) !important;
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.9),
+        0 1px 2px rgba(16,22,30,.04),
+        0 14px 38px -16px rgba(16,22,30,.16) !important;
+    }
+    /* soften pure-black body text on light surfaces to a rich near-black (less harsh) */
+    section.bg-paper .text-ink,
+    .soft-card .text-ink { color: #16191f !important; }
+    /* refined hairline where a dark section meets a light one */
+    section.bg-paper { border-top: 1px solid rgba(16,22,30,.06); }
+
+    /* ============================================================================
+       FV PRODUCT SPOTLIGHT / CIRCLE BADGES / VERTICAL FLOW (big-edit 2026-06)
+       ============================================================================ */
+    /* The hero now shows the product render (black machine on white). Frame it as a
+       clean light spotlight instead of the dark photo treatment. */
+    /* product (background removed) floated on the dark hero with a cool grey-blue
+       spotlight glow + drop shadow — matches the official DR.CHILL MODEL section.
+       No white card, no frame. */
+    .machine-stage {
+      position: relative;
+      isolation: isolate;
+      aspect-ratio: 4 / 5;
+      max-height: 760px;
+      width: 100%;
+      max-width: 440px;
+      margin-inline: auto;
+    }
+    .machine-stage::before {
+      content: "";
+      position: absolute;
+      inset: -8% -6% 0;
+      z-index: 0;
+      background: radial-gradient(56% 52% at 50% 34%, rgba(86,96,110,.58) 0%, rgba(46,54,66,.26) 40%, rgba(11,15,22,0) 72%);
+    }
+    .machine-stage img {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 24px 30px rgba(0,0,0,.5));
+    }
+    /* soft elliptical contact shadow so the machine reads as grounded, not floating */
+    .machine-stage::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 3%;
+      z-index: 0;
+      width: 56%;
+      height: 4.5%;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      background: radial-gradient(50% 50% at 50% 50%, rgba(0,0,0,.6) 0%, rgba(0,0,0,0) 72%);
+      filter: blur(7px);
+    }
+    @media (max-width: 1023px) {
+      .machine-stage { max-height: 520px; }
+    }
+    /* FV product-family lineup (5 flavour boxes in a row); PNG carries reflection + contact shadow,
+       this only adds the spotlight backdrop + a soft drop shadow. */
+    .lineup-stage {
+      position: relative;
+      isolation: isolate;
+      width: 100%;
+      max-width: 580px;
+      margin-inline: auto;
+    }
+    .lineup-stage::before {
+      content: "";
+      position: absolute;
+      inset: -26% -6% -8%;
+      z-index: 0;
+      background: radial-gradient(56% 56% at 50% 44%, rgba(86,96,110,.5) 0%, rgba(46,54,66,.22) 42%, rgba(11,15,22,0) 72%);
+    }
+    .lineup-stage img {
+      position: relative;
+      z-index: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      filter: drop-shadow(0 18px 24px rgba(0,0,0,.42));
+    }
+    /* smaller product thumbnails (features / flow) on a subtle dark spotlight tile */
+    .machine-tile {
+      position: relative;
+      background:
+        radial-gradient(62% 60% at 50% 40%, rgba(76,86,100,.36) 0%, rgba(17,21,28,0) 72%),
+        linear-gradient(160deg, rgba(255,255,255,.06) 0%, rgba(255,255,255,.02) 100%);
+      border: 1px solid rgba(233,234,234,.14);
+    }
+    .machine-tile img {
+      filter: drop-shadow(0 14px 20px rgba(0,0,0,.5));
+    }
+    /* real install photos: monochrome them so the busy colourful street signage
+       stops clashing with the premium dark/monochrome tone. */
+    .install-photo {
+      filter: grayscale(1) contrast(1.05) brightness(.9);
+    }
+
+    /* FV spec badges — refined glass dome (top sheen, darker base, crisp hairline ring) */
+    .spec-badge {
+      aspect-ratio: 1 / 1;
+      border-radius: 9999px;
+      border: 1px solid rgba(255,255,255,.16);
+      background:
+        radial-gradient(125% 120% at 50% -8%, rgba(196,210,238,.22) 0%, rgba(120,135,170,.08) 34%, rgba(255,255,255,0) 60%),
+        linear-gradient(180deg, rgba(34,44,64,.55) 0%, rgba(11,16,27,.6) 100%);
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.26),
+        inset 0 -14px 26px rgba(0,0,0,.34),
+        0 16px 32px -8px rgba(0,0,0,.5);
+      backdrop-filter: blur(8px);
+    }
+    .spec-badge:hover {
+      border-color: rgba(196,210,238,.34);
+    }
+
+    /* vertical dashed connector for the FLOW timeline */
+    .flow-line {
+      background-image: linear-gradient(to bottom, rgba(244,245,245,.55) 0 7px, transparent 7px 15px);
+      background-size: 2px 15px;
+      background-repeat: repeat-y;
+      background-position: center;
+    }
+    .flow-tile {
+      aspect-ratio: 4 / 3;
+      background: linear-gradient(160deg, rgba(255,255,255,.10) 0%, rgba(255,255,255,.03) 100%);
+    }
+    .flow-tile svg {
+      width: 56px;
+      height: 56px;
+      stroke: rgba(244,245,245,.78);
+      stroke-width: 1.4;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    /* FEATURE tiles: line-art icons in the same monochrome treatment as FLOW */
+    .feat-tile svg {
+      width: 76px;
+      height: 76px;
+      stroke: rgba(244,245,245,.82);
+      stroke-width: 1.3;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+  </style>
+  <noscript>
+    <style>
+      .fade-up {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    </style>
+  </noscript>
+</head>
+<body class="min-w-0 overflow-x-hidden bg-abyss text-ink antialiased">
+  <header class="header-shell fixed inset-x-0 top-0 z-50 text-paper">
+    <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-6 lg:px-8">
+      <a href="#top" class="focus-ring inline-flex items-center gap-3" aria-label="DR.CHILL 店舗卸 for Business トップへ">
+        <img
+          src="https://d2w53g1q050m78.cloudfront.net/drchillshop/uploads/themes/drchill_theme_20251211094418/ec_force/assets/images/logo.svg"
+          alt="DR.CHILL"
+          class="brand-logo h-7 w-auto max-w-[148px]"
+        >
+        <span class="hidden border-l border-paper/20 pl-3 font-display text-base font-medium text-paper sm:inline">for Business</span>
+      </a>
+
+      <nav class="hidden items-center gap-7 text-xs font-semibold text-paper/75 md:flex" aria-label="メインナビゲーション">
+        <a href="#flow" class="focus-ring transition hover:text-red">導入の流れ</a>
+        <a href="#faq" class="focus-ring transition hover:text-red">よくあるご質問</a>
+        <a href="vending.html" class="focus-ring transition hover:text-red">自販機ページ</a>
+        <a href="#contact" class="focus-ring glass-button px-5 py-2.5 text-paper">お問い合わせ</a>
+      </nav>
+
+      <button
+        id="menuButton"
+        class="focus-ring inline-flex h-11 w-11 items-center justify-center border border-paper/40 text-paper md:hidden"
+        type="button"
+        aria-controls="mobileMenu"
+        aria-expanded="false"
+        aria-label="メニューを開閉"
+      >
+        <span class="sr-only">メニュー</span>
+        <span class="relative block h-4 w-5" aria-hidden="true">
+          <span class="menu-line absolute left-0 top-0 h-px w-5 bg-current transition"></span>
+          <span class="menu-line absolute left-0 top-2 h-px w-5 bg-current transition"></span>
+          <span class="menu-line absolute bottom-0 left-0 h-px w-5 bg-current transition"></span>
+        </span>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="hidden border-t border-paper/10 bg-abyss/95 md:hidden">
+      <nav class="mx-auto grid max-w-7xl gap-1 px-5 py-5 text-sm font-medium text-paper" aria-label="モバイルナビゲーション">
+        <a href="#flow" class="mobile-link focus-ring border-b border-paper/10 py-3">導入の流れ</a>
+        <a href="#faq" class="mobile-link focus-ring border-b border-paper/10 py-3">よくあるご質問</a>
+        <a href="vending.html" class="mobile-link focus-ring border-b border-paper/10 py-3 text-paper/70">自動販売機設置ページへ</a>
+        <a href="#contact" class="mobile-link focus-ring glass-button mt-3 px-5 py-3 text-center">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="dark-surface dark-grid relative overflow-hidden pt-28 text-paper">
+      <div class="mx-auto grid min-h-[calc(94svh-7rem)] max-w-7xl items-center gap-10 px-5 pb-12 sm:px-6 lg:grid-cols-[1.02fr_0.92fr] lg:px-8">
+        <div class="fade-up relative min-w-0 max-w-3xl py-8 lg:py-14">
+          <h1 class="section-title text-[2rem] leading-[1.3] text-paper sm:[word-break:keep-all] sm:text-[2.4rem] sm:leading-[1.26] lg:text-[2.72rem]">
+            売れ筋No.1<span class="align-super text-[0.26em] text-paper/35">※</span>の<span class="metal-red">VAPE</span>を<br class="hidden sm:block">あなたの店舗の、新たな<span class="metal-red">収益源</span>に
+          </h1>
+          <p class="mt-7 max-w-2xl text-[15px] leading-8 text-paper/90 sm:text-base">
+            人気拡大中で高単価のベイプを、あなたの店舗へ卸します。店頭販売・景品・ノベルティなど売り方は自由。店舗の新たな利益の柱になります。
+          </p>
+
+          <div class="mt-9 grid max-w-md grid-cols-3 gap-3 sm:gap-5">
+            <div class="spec-badge flex flex-col items-center justify-center px-1 text-center">
+              <span class="text-[12px] font-semibold leading-none text-paper/80 sm:text-sm">店頭価格</span>
+              <span class="mt-1.5 flex items-baseline justify-center gap-0.5 font-display font-semibold leading-none text-paper">
+                <span class="text-2xl sm:text-3xl">3,000</span>
+                <span class="text-base sm:text-lg">円</span>
+              </span>
+            </div>
+            <div class="spec-badge flex flex-col items-center justify-center px-1 text-center">
+              <span class="text-[12px] font-semibold leading-none text-paper/80 sm:text-sm">フレーバー</span>
+              <span class="mt-1.5 flex items-baseline justify-center gap-0.5 font-display font-semibold leading-none text-paper">
+                <span class="text-3xl sm:text-4xl">16</span>
+                <span class="text-base sm:text-lg">種</span>
+              </span>
+            </div>
+            <div class="spec-badge flex flex-col items-center justify-center px-1 text-center">
+              <span class="text-[12px] font-semibold leading-none text-paper/80 sm:text-sm">取扱実績</span>
+              <span class="mt-1.5 flex items-baseline justify-center gap-0.5 font-display font-semibold leading-none text-paper">
+                <span class="text-3xl sm:text-4xl">100</span>
+                <span class="text-base sm:text-lg">店舗+</span>
+              </span>
+            </div>
+          </div>
+
+          <p class="mt-8 text-[10px] leading-5 text-paper/40">※Amazon売れ筋ランキング 電子タバコ部門／取扱実績は自社調べ・2026年時点。20歳以上対象・事業者向け窓口です。</p>
+        </div>
+
+        <div class="fade-up min-w-0 lg:justify-self-end">
+          <figure class="lineup-stage">
+            <img src="assets/fv-fixture-lineup.png?v=2" alt="DR.CHILL 7000 の卓上什器と人気フレーバー（ブルーベリーアイス／ラムネソーダ／シャインマスカット／レモンアイス／コーラメンソール）のパッケージ5種" loading="eager">
+          </figure>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="problems" class="dark-surface ds-tc py-20 text-paper sm:py-24">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="fade-up mx-auto max-w-3xl text-center">
+          <p class="eyebrow text-red">store issues</p>
+          <div class="red-line mx-auto my-5"></div>
+          <h2 class="section-title text-4xl leading-tight text-paper sm:text-5xl">こんなお悩みありませんか？</h2>
+        </div>
+
+        <div class="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+          <article class="fade-up dark-card flex flex-col items-center justify-center px-5 py-8 text-center">
+            <div class="icon-box text-paper/70">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 18 24 9l16 9-16 9-16-9Z"/><path d="M12 21v12l12 7 12-7V21"/><path d="M24 27v13"/><path d="M17 17l7-4 7 4"/></svg>
+            </div>
+            <p class="mt-5 text-sm font-semibold leading-7 text-paper">空きスペースを活かしたい</p>
+          </article>
+          <article class="fade-up dark-card flex flex-col items-center justify-center px-5 py-8 text-center">
+            <div class="icon-box text-paper/70">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6 39 13v10c0 10-6.5 17-15 21C15.5 40 9 33 9 23V13l15-7Z"/><path d="m17 24 5 5 10-12"/></svg>
+            </div>
+            <p class="mt-5 text-sm font-semibold leading-7 text-paper">仕入れリスクは抑えたい</p>
+          </article>
+          <article class="fade-up dark-card flex flex-col items-center justify-center px-5 py-8 text-center">
+            <div class="icon-box text-paper/70">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 38h32"/><path d="M12 34V22"/><path d="M22 34V14"/><path d="M32 34V18"/><path d="m12 18 10-8 9 7 8-9"/></svg>
+            </div>
+            <p class="mt-5 text-sm font-semibold leading-7 text-paper">客単価を上げたい</p>
+          </article>
+          <article class="fade-up dark-card flex flex-col items-center justify-center px-5 py-8 text-center">
+            <div class="icon-box text-paper/70">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 14h28v22H10z"/><path d="M16 20h12"/><path d="M16 27h20"/><path d="M16 33h8"/><path d="M32 14v-4"/><path d="M18 14v-4"/></svg>
+            </div>
+            <p class="mt-5 text-sm font-semibold leading-7 text-paper">売れる商品を仕入れたい</p>
+          </article>
+          <article class="fade-up dark-card flex flex-col items-center justify-center px-5 py-8 text-center">
+            <div class="icon-box text-paper/70">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="24" cy="13" rx="12" ry="5"/><path d="M12 13v9c0 2.8 5.4 5 12 5s12-2.2 12-5v-9"/><path d="M12 22v9c0 2.8 5.4 5 12 5s12-2.2 12-5v-9"/></svg>
+            </div>
+            <p class="mt-5 text-sm font-semibold leading-7 text-paper">手間なく売上を増やしたい</p>
+          </article>
+        </div>
+
+        <!-- the answer: typographic reveal. ToB-restrained; product name is the hero with a clean white underline; subtle chevron leads the eye to the solution below. -->
+        <div class="fade-up mx-auto mt-20 flex max-w-3xl flex-col items-center text-center">
+          <p class="text-base leading-8 text-paper/65 sm:text-lg">こうした課題を解決するのが</p>
+          <p class="section-title mt-3 text-[1.7rem] font-medium leading-snug text-paper [word-break:keep-all] sm:text-[2.3rem]">DR.CHILL の<span class="answer-underline">ベイプ卸</span>です。</p>
+          <p class="mt-7 max-w-2xl text-sm leading-7 text-paper/60 sm:text-base">高単価×人気商品を仕入れて、自由な売り方で。<br>仕入れリスクを抑えながら、新たな利益の柱を生み出せます。</p>
+          <a href="#features" class="group mt-12 flex flex-col items-center gap-2" aria-label="特徴を見る">
+            <span class="h-9 w-px bg-gradient-to-b from-paper/35 to-transparent"></span>
+            <svg class="h-4 w-4 text-paper/40 transition group-hover:text-paper/75" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="dark-surface ds-tl py-20 text-paper sm:py-24">
+      <div class="mx-auto max-w-6xl px-5 sm:px-6 lg:px-8">
+        <div class="fade-up mx-auto max-w-3xl text-center">
+          <p class="eyebrow text-red">features</p>
+          <div class="red-line mx-auto my-5"></div>
+          <h2 class="section-title text-4xl leading-tight text-paper sm:text-5xl">店舗卸の特徴</h2>
+        </div>
+
+        <ol class="mt-14 space-y-6">
+          <li class="fade-up dark-card grid items-center gap-6 p-5 sm:grid-cols-[minmax(0,300px)_1fr] sm:gap-8 sm:p-6">
+            <figure class="machine-tile overflow-hidden" style="aspect-ratio:4/3">
+              <img src="assets/feat-amazon-no1.png" alt="Amazon売れ筋ランキング電子タバコ部門 第1位を獲得した DR.CHILL 7000" class="h-full w-full object-contain" loading="lazy">
+            </figure>
+            <div>
+              <p class="font-display text-sm font-semibold tracking-widest text-paper/55">FEATURE 01</p>
+              <h3 class="section-title mt-2 text-2xl text-paper sm:text-3xl">Amazonランキング1位の人気商品を仕入れ</h3>
+              <p class="mt-4 leading-8 text-paper/80">
+                取り扱うのは Amazon売れ筋ランキング1位を獲得した「DR.CHILL 7000」。<br class="hidden sm:block">すでにEC市場で売れ続けている実績ある商品だからこそ、店頭でも安定した販売が見込めます。<br class="hidden sm:block">集客力のある人気商品を、そのまま売場に並べられます。
+              </p>
+            </div>
+          </li>
+
+          <li class="fade-up dark-card grid items-center gap-6 p-5 sm:grid-cols-[minmax(0,300px)_1fr] sm:gap-8 sm:p-6">
+            <figure class="machine-tile overflow-hidden flex items-center justify-center" style="aspect-ratio:4/3">
+              <img src="https://d2w53g1q050m78.cloudfront.net/drchillshop/uploads/themes/drchill_theme_20251211094418/ec_force/assets/images/top-device-image-drchill-7000.webp" alt="高単価で1本あたりの利益額が大きい DR.CHILL 7000" class="h-full w-full object-contain p-6" loading="lazy">
+            </figure>
+            <div>
+              <p class="font-display text-sm font-semibold tracking-widest text-paper/55">FEATURE 02</p>
+              <h3 class="section-title mt-2 text-2xl text-paper sm:text-3xl">高単価だから、1本あたりの利益額が大きい</h3>
+              <p class="mt-4 leading-8 text-paper/80">
+                取り扱うのは店頭価格 <span class="font-semibold text-paper">1本3,000円</span> の高単価商材。単価が高いぶん、1本売れたときの利益額が大きいのが強みです。<br class="hidden sm:block">7,000パフ・16フレーバー展開で幅広い好みに対応でき、少ない販売数でもまとまった利益につながります。
+              </p>
+            </div>
+          </li>
+
+          <li class="fade-up dark-card grid items-center gap-6 p-5 sm:grid-cols-[minmax(0,300px)_1fr] sm:gap-8 sm:p-6">
+            <figure class="machine-tile overflow-hidden" style="aspect-ratio:4/3">
+              <img src="assets/feat-easystart.png?v=1" alt="設置工事や月額費用なしで始められる店頭販売イメージ" class="h-full w-full object-cover" loading="lazy">
+            </figure>
+            <div>
+              <p class="font-display text-sm font-semibold tracking-widest text-paper/55">FEATURE 03</p>
+              <h3 class="section-title mt-2 text-2xl text-paper sm:text-3xl">設置工事・月額費用なしで始められる</h3>
+              <p class="mt-4 leading-8 text-paper/80">
+                自販機のような設置工事や月額の固定費は一切不要。仕入れた商品を売場に並べるだけで、すぐに販売を始められます。<br class="hidden sm:block">固定費の負担を抱えずに、まずは少量からのお試し導入も可能です。
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="profitability" class="light-surface py-20 text-ink sm:py-24">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="fade-up mx-auto max-w-3xl text-center">
+          <p class="eyebrow text-red">profitability</p>
+          <div class="red-line mx-auto my-5"></div>
+          <h2 class="section-title text-4xl leading-tight text-ink sm:text-5xl">収益性について</h2>
+          <p class="mt-5 text-lg leading-9 text-slate">商品単価が高いから、1本あたりの粗利が大きい。</p>
+        </div>
+
+        <!-- WHY profitable: comparison table = concrete proof. DR.CHILL column is the highlighted card (dark cap + vertical frame); the other recedes in grey; labels/whitespace stay light. No black "L". -->
+        <div class="fade-up mx-auto mt-12 max-w-4xl">
+          <div class="overflow-hidden rounded-2xl bg-paper shadow-photo ring-1 ring-line">
+            <table class="w-full table-fixed border-collapse text-center">
+              <thead>
+                <tr>
+                  <th class="w-[26%] p-4 text-left align-bottom sm:p-5"><span class="text-[0.7rem] font-medium tracking-[0.1em] text-slate sm:text-xs">比較項目</span></th>
+                  <th class="border-x border-ink/10 p-4 align-bottom sm:p-5" style="background:linear-gradient(155deg,#1b2638 0%,#0f1724 100%)">
+                    <span class="block text-[0.7rem] font-medium tracking-[0.14em] text-paper/55 sm:text-xs">DR.CHILL</span>
+                    <span class="mt-1 block text-base font-bold leading-snug text-paper sm:text-xl">ベイプ卸</span>
+                  </th>
+                  <th class="bg-mist p-4 align-bottom sm:p-5">
+                    <span class="block text-[0.7rem] font-medium tracking-[0.12em] text-slate sm:text-xs">一般的な</span>
+                    <span class="mt-1 block text-base font-bold leading-snug text-slate sm:text-xl">店頭物販商材</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-t border-line">
+                  <th scope="row" class="p-4 text-left text-sm font-semibold text-ink sm:p-5 sm:text-base">商品単価</th>
+                  <td class="border-x border-ink/10 p-3 sm:p-5"><span class="font-display text-xl font-semibold leading-none text-ink sm:text-[2.1rem]">3,000<span class="text-sm font-semibold sm:text-lg">円</span></span></td>
+                  <td class="bg-mist p-4 text-base text-slate sm:p-5 sm:text-lg">〜数百円</td>
+                </tr>
+                <tr class="border-t border-line">
+                  <th scope="row" class="p-4 text-left text-sm font-semibold text-ink sm:p-5 sm:text-base">販促サポート</th>
+                  <td class="border-x border-ink/10 p-4 text-lg font-bold text-ink sm:p-5 sm:text-xl">什器・POP付き</td>
+                  <td class="bg-mist p-4 text-base text-slate sm:p-5 sm:text-lg">自前で用意</td>
+                </tr>
+                <tr class="border-t border-line">
+                  <th scope="row" class="p-4 text-left text-sm font-semibold text-ink sm:p-5 sm:text-base">リピート性</th>
+                  <td class="border-x border-ink/10 p-4 text-lg font-bold text-ink sm:p-5 sm:text-xl">高い</td>
+                  <td class="bg-mist p-4 text-base text-slate sm:p-5 sm:text-lg">商材による</td>
+                </tr>
+                <tr class="border-t border-line">
+                  <th scope="row" class="p-4 text-left text-sm font-semibold text-ink sm:p-5 sm:text-base">収益性</th>
+                  <td class="border-x border-b border-ink/10 p-4 text-3xl font-bold text-ink sm:p-5 sm:text-4xl">◎</td>
+                  <td class="bg-mist p-4 text-3xl text-slate sm:p-5 sm:text-4xl">△</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- store vs DR.CHILL responsibilities. equal-height cards (default stretch); headings top-aligned across both for a clean comparison read. -->
+        <div class="fade-up mx-auto mt-12 grid max-w-5xl gap-4 md:grid-cols-2">
+          <div class="soft-card flex flex-col p-7 sm:p-8">
+            <span class="text-xs font-bold tracking-[0.18em] text-slate">STORE</span>
+            <h3 class="mt-2 text-xl font-bold text-ink">店舗様がすること</h3>
+            <ul class="role-list mt-5 space-y-3 text-ink">
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4 4L19 7"/></svg>商品の仕入れ</li>
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4 4L19 7"/></svg>商品の設置</li>
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4 4L19 7"/></svg>店舗での販売・活用</li>
+            </ul>
+          </div>
+          <div class="soft-card flex flex-col bg-mist p-7 sm:p-8">
+            <span class="text-xs font-bold tracking-[0.18em] text-slate">DR.CHILL</span>
+            <h3 class="mt-2 text-xl font-bold text-ink">弊社がすること</h3>
+            <ul class="role-list mt-5 space-y-3 text-ink">
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4 4L19 7"/></svg>卓上什器のご提供</li>
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4 4L19 7"/></svg>POP・販促物のご提供</li>
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4 4L19 7"/></svg>商品供給・追加発注対応</li>
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4 4L19 7"/></svg>フレーバー構成のご提案</li>
+            </ul>
+          </div>
+        </div>
+        <p class="fade-up mx-auto mt-10 max-w-4xl text-center text-base leading-8 text-slate sm:text-lg">仕入れたらすぐ販売可能。卓上什器や販促物もご用意できるので、売り方に合わせてサポートします。</p>
+      </div>
+    </section>
+
+    <section id="cases" class="dark-surface ds-tl border-y border-paper/10 py-20 text-paper sm:py-24">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="fade-up mx-auto max-w-3xl text-center">
+          <p class="eyebrow text-red">cases</p>
+          <div class="red-line mx-auto my-5"></div>
+          <h2 class="section-title text-4xl leading-tight text-paper sm:text-5xl">設置事例</h2>
+          <p class="mt-5 text-lg leading-9 text-paper/75">レジ横のわずかなスペースで、店頭販売を始めた事例をご紹介します。</p>
+        </div>
+
+        <div class="mx-auto mt-12 grid max-w-4xl gap-5 sm:grid-cols-2">
+          <figure class="fade-up dark-card overflow-hidden">
+            <img
+              src="assets/case-ws-ita.jpg?v=3"
+              alt="イタリアンレストランのレジ横カウンターに設置された DR.CHILL 卓上什器"
+              class="aspect-[4/3] w-full object-cover"
+              loading="lazy"
+            >
+            <figcaption class="border-t border-paper/10 p-5">
+              <p class="flex items-center gap-1.5 text-xs font-bold tracking-[0.14em] text-paper/55">
+                <svg viewBox="0 0 24 24" class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/></svg>
+                東京・麻布十番
+              </p>
+              <h3 class="mt-1.5 text-lg font-bold text-paper">イタリアン</h3>
+              <p class="mt-1 text-sm leading-7 text-paper/60">会計レジ横に設置。お会計時のついで買いにつながっています。</p>
+            </figcaption>
+          </figure>
+          <figure class="fade-up dark-card overflow-hidden">
+            <img
+              src="assets/case-ws-darts.jpg?v=2"
+              alt="ダーツバーのレジ横カウンターに設置された DR.CHILL 卓上什器"
+              class="aspect-[4/3] w-full object-cover"
+              loading="lazy"
+            >
+            <figcaption class="border-t border-paper/10 p-5">
+              <p class="flex items-center gap-1.5 text-xs font-bold tracking-[0.14em] text-paper/55">
+                <svg viewBox="0 0 24 24" class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/></svg>
+                東京・蒲田
+              </p>
+              <h3 class="mt-1.5 text-lg font-bold text-paper">ダーツバー</h3>
+              <p class="mt-1 text-sm leading-7 text-paper/60">カウンターのレジ横に設置。滞在中のリピート購入につながっています。</p>
+            </figcaption>
+          </figure>
+        </div>
+        <p class="fade-up mx-auto mt-8 max-w-3xl text-center text-sm leading-7 text-paper/60">居酒屋・バーなどを中心に、多くの店舗様にご導入いただいております。</p>
+      </div>
+    </section>
+
+    <section id="industries" class="dark-surface ds-tr ds-cool border-y border-paper/10 py-20 text-paper sm:py-24">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="fade-up mx-auto max-w-3xl text-center">
+          <p class="eyebrow text-red">target stores</p>
+          <div class="red-line mx-auto my-5"></div>
+          <h2 class="section-title text-4xl leading-tight text-paper sm:text-5xl">対象業態</h2>
+          <p class="mt-5 text-lg leading-9 text-paper/75">業態ごとの客層・販売導線に合わせて、取扱い方法をご相談いただけます。</p>
+        </div>
+
+        <div class="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="fade-up dark-card flex flex-col items-center justify-center px-5 py-10 text-center">
+            <div class="icon-box text-paper/70">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M14 6h20"/><path d="M24 6v16"/><path d="M14 22h20l-10 10-10-10Z"/><path d="M24 32v10"/><path d="M16 42h16"/></svg>
+            </div>
+            <p class="mt-5 text-base font-bold leading-7 text-paper">バー</p>
+          </article>
+          <article class="fade-up dark-card flex flex-col items-center justify-center px-5 py-10 text-center">
+            <div class="icon-box text-paper/70">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 22h24v8a12 12 0 0 1-24 0v-8Z"/><path d="M36 24h4a4 4 0 0 1 0 8h-4"/><path d="M18 8v4"/><path d="M24 6v6"/><path d="M30 8v4"/><path d="M14 42h20"/></svg>
+            </div>
+            <p class="mt-5 text-base font-bold leading-7 text-paper">ラウンジ</p>
+          </article>
+          <article class="fade-up dark-card flex flex-col items-center justify-center px-5 py-10 text-center">
+            <div class="icon-box text-paper/70">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 16h32l-2 24H10L8 16Z"/><path d="M16 16a8 8 0 0 1 16 0"/></svg>
+            </div>
+            <p class="mt-5 text-base font-bold leading-7 text-paper">小売店</p>
+          </article>
+          <article class="fade-up dark-card flex flex-col items-center justify-center px-5 py-10 text-center">
+            <div class="icon-box text-paper/70">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6c8 0 14 6 14 16 0 8-6 14-14 14S10 30 10 22C10 12 16 6 24 6Z"/><path d="M24 36v6"/><path d="M18 42h12"/><path d="M20 18a4 4 0 0 1 8 0c0 3-4 4-4 7"/></svg>
+            </div>
+            <p class="mt-5 text-base font-bold leading-7 text-paper">サロン・美容</p>
+          </article>
+        </div>
+
+        <p class="fade-up mx-auto mt-10 max-w-3xl text-center text-sm leading-7 text-paper/55 sm:text-base">アミューズメント施設での景品提供など、上記以外の業態でも、20歳以上のお客様が対象の店舗であればご相談いただけます。</p>
+      </div>
+    </section>
+
+    <section id="flow" class="dark-surface ds-tc border-y border-paper/10 py-20 text-paper sm:py-24">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="fade-up mx-auto max-w-3xl text-center">
+          <p class="eyebrow text-red">flow</p>
+          <div class="red-line mx-auto my-5"></div>
+          <h2 class="section-title text-4xl text-paper sm:text-5xl">導入の流れ</h2>
+          <p class="mt-5 leading-8 text-paper/75">お問い合わせ後、ヒアリング・お見積・ご契約を経て、商品・卓上什器・販促物を納品します。</p>
+        </div>
+
+        <ol class="mt-14 space-y-4">
+          <li class="fade-up grid items-center gap-4 sm:grid-cols-[minmax(0,300px)_44px_1fr]">
+            <figure class="flow-tile dark-card overflow-hidden">
+              <img src="assets/flow-1.jpg?v=2" alt="店舗卸のご相談・お問い合わせ" class="h-full w-full object-cover" loading="lazy">
+            </figure>
+            <div class="relative hidden h-full min-h-24 sm:block" aria-hidden="true">
+              <span class="absolute left-1/2 top-0 h-full w-px -translate-x-1/2 flow-line"></span>
+              <span class="absolute left-1/2 top-1/2 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-paper"></span>
+            </div>
+            <div class="py-2">
+              <h3 class="section-title text-2xl text-paper sm:text-3xl"><span class="font-display">Step<span class="text-3xl font-semibold sm:text-4xl">1</span></span>　お問い合わせ</h3>
+              <p class="mt-2 font-semibold text-paper">取扱予定の業態・エリアをお知らせください。</p>
+              <p class="mt-3 leading-8 text-paper/75">フォームから、取扱予定の業態・エリア・希望時期・想定数量などをお送りください。担当者が確認し、必要事項をヒアリングします。</p>
+            </div>
+          </li>
+
+          <li class="fade-up grid items-center gap-4 sm:grid-cols-[minmax(0,300px)_44px_1fr]">
+            <figure class="flow-tile dark-card overflow-hidden">
+              <img src="assets/flow-2.jpg?v=2" alt="ヒアリング・お見積" class="h-full w-full object-cover" loading="lazy">
+            </figure>
+            <div class="relative hidden h-full min-h-24 sm:block" aria-hidden="true">
+              <span class="absolute left-1/2 top-0 h-full w-px -translate-x-1/2 flow-line"></span>
+              <span class="absolute left-1/2 top-1/2 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-paper"></span>
+            </div>
+            <div class="py-2">
+              <h3 class="section-title text-2xl text-paper sm:text-3xl"><span class="font-display">Step<span class="text-3xl font-semibold sm:text-4xl">2</span></span>　ヒアリング・お見積</h3>
+              <p class="mt-2 font-semibold text-paper">卸条件と必要な販促物をご案内します。</p>
+              <p class="mt-3 leading-8 text-paper/75">ご要望を確認のうえ、卸価格・最低ロット・納期、必要な卓上什器やPOP・販促物について個別にご案内します。</p>
+            </div>
+          </li>
+
+          <li class="fade-up grid items-center gap-4 sm:grid-cols-[minmax(0,300px)_44px_1fr]">
+            <figure class="flow-tile dark-card overflow-hidden">
+              <img src="assets/flow-ws-3.jpg?v=3" alt="ご契約・お申し込みのお手続き" class="h-full w-full object-cover" loading="lazy">
+            </figure>
+            <div class="relative hidden h-full min-h-24 sm:block" aria-hidden="true">
+              <span class="absolute left-1/2 top-0 h-full w-px -translate-x-1/2 flow-line"></span>
+              <span class="absolute left-1/2 top-1/2 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-paper"></span>
+            </div>
+            <div class="py-2">
+              <h3 class="section-title text-2xl text-paper sm:text-3xl"><span class="font-display">Step<span class="text-3xl font-semibold sm:text-4xl">3</span></span>　ご契約</h3>
+              <p class="mt-2 font-semibold text-paper">条件に合意のうえ、手続きを進めます。</p>
+              <p class="mt-3 leading-8 text-paper/75">卸条件にご同意いただいた後、取扱いに必要な手続きを進めます。フレーバー構成や什器・販促物の内容も、この段階で確定します。</p>
+            </div>
+          </li>
+
+          <li class="fade-up grid items-center gap-4 sm:grid-cols-[minmax(0,300px)_44px_1fr]">
+            <figure class="flow-tile dark-card overflow-hidden">
+              <img src="assets/flow-ws-4.jpg?v=2" alt="店頭カウンターに設置した DR.CHILL 卓上什器（納品・販売開始）" class="h-full w-full object-cover" loading="lazy">
+            </figure>
+            <div class="relative hidden h-full min-h-24 sm:block" aria-hidden="true">
+              <span class="absolute left-1/2 top-0 h-1/2 w-px -translate-x-1/2 flow-line"></span>
+              <span class="absolute left-1/2 top-1/2 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-paper"></span>
+            </div>
+            <div class="py-2">
+              <h3 class="section-title text-2xl text-paper sm:text-3xl"><span class="font-display">Step<span class="text-3xl font-semibold sm:text-4xl">4</span></span>　納品・販売開始</h3>
+              <p class="mt-2 font-semibold text-paper">商品・卓上什器・販促物を納品します。</p>
+              <p class="mt-3 leading-8 text-paper/75">ご指定の場所へ商品・卓上什器・POP・販促物を納品します。届いたその日から、店頭販売も景品も自由に始められます。追加発注のご相談も承ります。</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="fade-up mt-12 flex justify-center">
+          <a href="#contact" class="focus-ring glass-button inline-flex items-center justify-center px-6 py-3 text-sm font-bold">
+            卸条件を相談する
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="light-surface py-20 text-ink sm:py-24">
+      <div class="mx-auto max-w-5xl px-5 sm:px-6 lg:px-8">
+        <div class="fade-up mx-auto max-w-3xl text-center">
+          <p class="eyebrow text-red">faq</p>
+          <div class="red-line mx-auto my-5"></div>
+          <h2 class="section-title text-4xl text-ink sm:text-5xl">よくあるご質問</h2>
+        </div>
+
+        <div class="soft-card mt-10">
+          <details class="faq-item fade-up border-b border-line">
+            <summary class="flex cursor-pointer items-center gap-4 px-5 py-5 font-semibold text-ink sm:px-7">卸価格や最低ロットを知りたいです。</summary>
+            <p class="px-5 pb-6 leading-8 text-slate sm:px-7">卸価格・最低ロット・納期・お支払い条件は、業態や取扱数量に応じて個別にご案内します。まずはお問い合わせください。取扱数量が未定の場合もご相談いただけます。</p>
+          </details>
+          <details class="faq-item fade-up border-b border-line">
+            <summary class="flex cursor-pointer items-center gap-4 px-5 py-5 font-semibold text-ink sm:px-7">卓上什器やPOPはもらえますか？</summary>
+            <p class="px-5 pb-6 leading-8 text-slate sm:px-7">卓上什器・POP・販促物をご用意しています。什器に並べてすぐに販売を始められます。卓上什器はあくまで販売をサポートする提供物の一つで、売場やレジ周りに合わせて見せ方もご相談いただけます。</p>
+          </details>
+          <details class="faq-item fade-up border-b border-line">
+            <summary class="flex cursor-pointer items-center gap-4 px-5 py-5 font-semibold text-ink sm:px-7">売り方に決まりはありますか？</summary>
+            <p class="px-5 pb-6 leading-8 text-slate sm:px-7">決まりはありません。<span class="font-semibold text-ink">店頭販売はもちろん、景品やノベルティなど自由にご活用いただけます</span>。卓上什器は店舗へ卸す際の提供手段の一つで、使い方は店舗様の自由です。</p>
+          </details>
+          <details class="faq-item fade-up border-b border-line">
+            <summary class="flex cursor-pointer items-center gap-4 px-5 py-5 font-semibold text-ink sm:px-7">仕入れの在庫リスクが心配です。</summary>
+            <p class="px-5 pb-6 leading-8 text-slate sm:px-7">取扱数量は、無理のない範囲から始められます。追加発注にも対応するため、過剰な仕入れを避けながら販売できます。Amazon売れ筋ランキング1位の人気商品のため、回転も見込めます。<span class="text-sm">※最低ロット・条件は個別にご案内します。</span></p>
+          </details>
+          <details class="faq-item fade-up border-b border-line">
+            <summary class="flex cursor-pointer items-center gap-4 px-5 py-5 font-semibold text-ink sm:px-7">どのくらいのスペースが必要ですか？</summary>
+            <p class="px-5 pb-6 leading-8 text-slate sm:px-7">卓上什器をご利用の場合は、レジ横やカウンターのわずかなスペースに置けます。大きな棚や専用什器を新たに用意する必要はありません。景品など什器を使わない売り方も自由です。</p>
+          </details>
+          <details class="faq-item fade-up border-b border-line">
+            <summary class="flex cursor-pointer items-center gap-4 px-5 py-5 font-semibold text-ink sm:px-7">どんな店舗が対象ですか？</summary>
+            <p class="px-5 pb-6 leading-8 text-slate sm:px-7">バー・ラウンジ・小売店・サロンなど、20歳以上のお客様が来店する店舗が対象です。業態が一覧にない場合もご相談ください。</p>
+          </details>
+          <details class="faq-item fade-up border-b border-line">
+            <summary class="flex cursor-pointer items-center gap-4 px-5 py-5 font-semibold text-ink sm:px-7">取り扱う商品は何ですか？</summary>
+            <p class="px-5 pb-6 leading-8 text-slate sm:px-7">DR.CHILL 7000 です。店頭価格は¥3,000、7,000パフ、16フレーバー、ニコチン・タールフリーの商品です。フレーバー構成もご相談いただけます。</p>
+          </details>
+          <details class="faq-item fade-up border-b border-line">
+            <summary class="flex cursor-pointer items-center gap-4 px-5 py-5 font-semibold text-ink sm:px-7">自動販売機の設置も検討できますか？</summary>
+            <p class="px-5 pb-6 leading-8 text-slate sm:px-7">自動販売機の設置にも対応しています。設置・補充・売上管理まで代行し、初期費用0円で導入できます。詳しくは<a href="vending.html" class="font-semibold text-ink underline decoration-ink/40 underline-offset-4">自販機ページ</a>をご覧いただくか、お問い合わせ時にご相談ください。</p>
+          </details>
+          <details class="faq-item fade-up">
+            <summary class="flex cursor-pointer items-center gap-4 px-5 py-5 font-semibold text-ink sm:px-7">20歳未満への対策は？</summary>
+            <p class="px-5 pb-6 leading-8 text-slate sm:px-7">20歳未満には販売しません。20歳以上対象の商品として、店頭での年齢確認にご協力をお願いします。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="dark-surface ds-tr py-20 text-paper sm:py-24">
+      <div class="mx-auto max-w-3xl px-5 sm:px-6 lg:px-8">
+        <div class="fade-up text-center">
+          <h2 class="section-title text-5xl text-paper sm:text-6xl">CONTACT</h2>
+          <p class="mt-3 text-sm font-semibold tracking-[0.16em] text-paper/80">お問い合わせフォーム</p>
+        </div>
+
+        <form
+          class="fade-up soft-card mt-10 grid gap-6 p-6 text-ink sm:p-10"
+          action="https://formspree.io/f/XXXXXXXX"
+          method="POST"
+        >
+          <input type="hidden" name="inquiry_type" value="店舗卸">
+
+          <label class="grid gap-2 text-sm font-medium text-ink">
+            <span class="flex items-center gap-2">お名前 <span class="inline-flex bg-red px-1.5 py-0.5 text-[11px] font-bold text-paper">必須</span></span>
+            <input class="focus-ring w-full border border-line bg-paper px-4 py-3 text-ink placeholder:text-slate" type="text" name="name" autocomplete="name" required placeholder="例）山田 太郎">
+          </label>
+          <label class="grid gap-2 text-sm font-medium text-ink">
+            <span class="flex items-center gap-2">会社名 <span class="inline-flex bg-red px-1.5 py-0.5 text-[11px] font-bold text-paper">必須</span></span>
+            <input class="focus-ring w-full border border-line bg-paper px-4 py-3 text-ink placeholder:text-slate" type="text" name="company" autocomplete="organization" required aria-required="true" placeholder="例）株式会社〇〇">
+          </label>
+          <label class="grid gap-2 text-sm font-medium text-ink">
+            <span class="flex items-center gap-2">メールアドレス <span class="inline-flex bg-red px-1.5 py-0.5 text-[11px] font-bold text-paper">必須</span></span>
+            <input class="focus-ring w-full border border-line bg-paper px-4 py-3 text-ink placeholder:text-slate" type="email" name="email" autocomplete="email" required placeholder="example@company.jp">
+          </label>
+          <label class="grid gap-2 text-sm font-medium text-ink">
+            <span class="flex items-center gap-2">電話番号 <span class="inline-flex bg-red px-1.5 py-0.5 text-[11px] font-bold text-paper">必須</span></span>
+            <input class="focus-ring w-full border border-line bg-paper px-4 py-3 text-ink placeholder:text-slate" type="tel" name="phone" autocomplete="tel" required placeholder="03-0000-0000">
+          </label>
+
+          <label class="grid gap-2 text-sm font-medium text-ink">
+            <span class="flex items-center gap-2">お問い合わせ内容 <span class="inline-flex bg-red px-1.5 py-0.5 text-[11px] font-bold text-paper">必須</span></span>
+            <textarea class="focus-ring min-h-36 w-full resize-y border border-line bg-paper px-4 py-3 text-ink placeholder:text-slate" name="message" required placeholder="取扱予定の業態・エリア、希望時期、想定数量、必要な什器・販促物などをご記入ください。"></textarea>
+          </label>
+
+          <label class="flex gap-3 text-sm leading-7 text-slate">
+            <input class="mt-1 h-4 w-4 rounded-none border-line accent-red" type="checkbox" name="privacy_agreement" value="同意済み" required>
+            <span>個人情報の取扱いに同意します。20歳以上対象・事業者向け窓口であることを確認しました。</span>
+          </label>
+
+          <input type="hidden" name="_subject" value="DR.CHILL 店舗卸 お問い合わせ">
+          <p id="formStatus" class="hidden border border-line bg-mist px-4 py-3 text-sm leading-7 text-ink" aria-live="polite">
+            送信ありがとうございました。内容を確認のうえ、担当者よりご連絡いたします。
+          </p>
+          <button class="focus-ring red-button inline-flex w-full items-center justify-center px-7 py-4 text-sm font-bold transition" type="submit">
+            送信する
+            <span class="ml-5 text-lg leading-none" aria-hidden="true">›</span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="dark-surface border-t border-paper/10 py-12 text-paper">
+    <div class="mx-auto flex max-w-7xl flex-col gap-8 px-5 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+      <div class="flex flex-col gap-4">
+        <a href="#top" class="focus-ring inline-flex items-center gap-3">
+          <img src="https://d2w53g1q050m78.cloudfront.net/drchillshop/uploads/themes/drchill_theme_20251211094418/ec_force/assets/images/logo.svg" alt="DR.CHILL" class="h-6 w-auto">
+          <span class="text-xs font-semibold tracking-[0.18em] text-paper/55">for Business</span>
+        </a>
+        <p class="max-w-xl text-xs leading-6 text-paper/45">本製品は20歳以上の方を対象としています。本サイトは事業者向けの窓口です。</p>
+      </div>
+      <nav class="flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-paper/75" aria-label="フッターナビゲーション">
+        <a class="focus-ring transition hover:text-paper" href="https://dr-chill.shop" target="_blank" rel="noopener noreferrer">公式サイト</a>
+        <a class="focus-ring transition hover:text-paper" href="https://www.instagram.com/drchill_brand/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a class="focus-ring transition hover:text-paper" href="https://x.com/drchill_brand" target="_blank" rel="noopener noreferrer">X</a>
+        <a class="focus-ring transition hover:text-paper" href="vending.html">自動販売機設置ページ</a>
+      </nav>
+    </div>
+    <div class="mx-auto mt-10 max-w-7xl border-t border-paper/10 px-5 pt-6 sm:px-6 lg:px-8">
+      <p class="text-xs text-paper/40">&copy; 2026 株式会社SOCIAL GREEN TECH / DR.CHILL</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.getElementById('menuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    if (menuButton && mobileMenu) {
+      const menuLines = menuButton.querySelectorAll('.menu-line');
+
+      function closeMenu() {
+        mobileMenu.classList.add('hidden');
+        menuButton.setAttribute('aria-expanded', 'false');
+        menuLines[0].style.transform = '';
+        menuLines[1].style.opacity = '1';
+        menuLines[2].style.transform = '';
+      }
+
+      function openMenu() {
+        mobileMenu.classList.remove('hidden');
+        menuButton.setAttribute('aria-expanded', 'true');
+        menuLines[0].style.transform = 'translateY(8px) rotate(45deg)';
+        menuLines[1].style.opacity = '0';
+        menuLines[2].style.transform = 'translateY(-8px) rotate(-45deg)';
+      }
+
+      menuButton.addEventListener('click', () => {
+        const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+        isOpen ? closeMenu() : openMenu();
+      });
+
+      document.querySelectorAll('.mobile-link').forEach((link) => {
+        link.addEventListener('click', closeMenu);
+      });
+    }
+
+    const contactForm = document.querySelector('form[action^="https://formspree.io"]');
+    const formStatus = document.getElementById('formStatus');
+    if (contactForm && formStatus) {
+      contactForm.addEventListener('submit', async (event) => {
+        if (contactForm.action.includes('XXXXXXXX')) return;
+        event.preventDefault();
+        const submitButton = contactForm.querySelector('button[type="submit"]');
+        const originalText = submitButton.textContent;
+        submitButton.disabled = true;
+        submitButton.textContent = '送信中...';
+
+        try {
+          const response = await fetch(contactForm.action, {
+            method: 'POST',
+            body: new FormData(contactForm),
+            headers: { Accept: 'application/json' }
+          });
+
+          if (!response.ok) throw new Error('Formspree submission failed');
+          contactForm.reset();
+          formStatus.classList.remove('hidden');
+          formStatus.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } catch (error) {
+          contactForm.submit();
+        } finally {
+          submitButton.disabled = false;
+          submitButton.textContent = originalText;
+        }
+      });
+    }
+
+    const fadeTargets = document.querySelectorAll('.fade-up');
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      fadeTargets.forEach((element) => observer.observe(element));
+    } else {
+      fadeTargets.forEach((element) => element.classList.add('is-visible'));
+    }
+  </script>
+</body>
+</html>
